@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Маршруты по России | RusTour 2025</title>    
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="1.html" class="logo">Rus<span>Tour</span></a>
+                <nav class="nav">
+                    <a href="regions.html" class="nav__link active">Маршруты</a>
+                    <button class="btn nav__btn">Подобрать тур</button>
+                </nav>
+                <button class="menu-btn" id="menuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main class="main routes-page">
+        <div class="container">
+            <nav class="breadcrumbs">
+                <a href="1.html">Главная</a>
+                <span> / </span>
+                <span>Маршруты</span>
+            </nav>
+        </div>
+
+        <!-- Заголовок страницы -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title"><i class="fas fa-route"></i> Популярные маршруты по России</h1>
+                <p class="page-subtitle">Готовые туристические маршруты на любой вкус</p>
+            </div>
+        </section>
+
+        <!-- Список статей с фильтрацией -->
+<section class="section articles-list">
+    <div class="container">
+        <!-- Фильтры статей -->
+        <div class="filter-tabs">
+            <button class="filter-tab active" data-filter="all">Все статьи</button>
+            <button class="filter-tab" data-filter="nature">Природные</button>
+            <button class="filter-tab" data-filter="culture">Культурные</button>
+            <button class="filter-tab" data-filter="active">Активные</button>
+        </div>
+
+        <div class="articles-grid">
+            <!-- Статья 1 (Культура) -->
+            <article class="article-card" data-type="culture">
+                <div class="article-card__image">
+                    <img src="ring.jpg" alt="Золотое кольцо">
+                    <span class="article-badge"><i class="fas fa-landmark"></i> Культура</span>
+                </div>
+                <div class="article-card__content">
+                    <h3>Золотое кольцо России: полный гид</h3>
+                    <p class="article-excerpt">Как посмотреть 8 древних городов за неделю. Маршрут и советы от гида.</p>
+                    <div class="article-footer">
+                        <a href="statyaMain.html" class="btn btn--outline">Читать статью</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Статья 2 (Природа) -->
+            <article class="article-card" data-type="nature">
+                <div class="article-card__image">
+                    <img src="altay.jpg" alt="Горный Алтай">
+                    <span class="article-badge"><i class="fas fa-mountain"></i> Природа</span>
+                </div>
+                <div class="article-card__content">
+                    <h3>Кемпинг на Алтае: что брать?</h3>
+                    <p class="article-excerpt">Как подготовиться к походу в горы Алтая и избежать ошибок новичков.</p>
+                    <div class="article-footer">
+                        <a href="statya.html" class="btn btn--outline">Читать статью</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Статья 3 (Природа) -->
+            <article class="article-card" data-type="nature">
+                <div class="article-card__image">
+                    <img src="karel.jpg" alt="Карелия">
+                    <span class="article-badge"><i class="fas fa-tree"></i> Природа</span>
+                </div>
+                <div class="article-card__content">
+                    <h3>10 мест Карелии, которые стоит увидеть</h3>
+                    <p class="article-excerpt">От водопада Кивач до острова Кижи - самые живописные места.</p>
+                    <div class="article-footer">
+                        <a href="statya.html" class="btn btn--outline">Читать статью</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Статья 4 (Культура) -->
+            <article class="article-card" data-type="culture">
+                <div class="article-card__image">
+                    <img src="kazan.jpeg" alt="Казань">
+                    <span class="article-badge"><i class="fas fa-utensils"></i> Культура</span>
+                </div>
+                <div class="article-card__content">
+                    <h3>Гастротур по Казани: что попробовать</h3>
+                    <p class="article-excerpt">Эчпочмак, кыстыбый и другие блюда татарской кухни.</p>
+                    <div class="article-footer">
+                        <a href="statya.html" class="btn btn--outline">Читать статью</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Статья 5 (Активный) -->
+            <article class="article-card" data-type="active">
+                <div class="article-card__image">
+                    <img src="sochi.jpg" alt="Сочи">
+                    <span class="article-badge"><i class="fas fa-hiking"></i> Активный</span>
+                </div>
+                <div class="article-card__content">
+                    <h3>Сочи и море: водные маршруты</h3>
+                    <p class="article-excerpt">5 водных маршрутов в Сочи для  туристов.</p>
+                    <div class="article-footer">
+                        <a href="statya.html" class="btn btn--outline">Читать статью</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Статья 6 (Природа) -->
+            <article class="article-card" data-type="nature">
+                <div class="article-card__image">
+                    <img src="BuyKall.jpg" alt="Байкал">
+                    <span class="article-badge"><i class="fas fa-water"></i> Природа</span>
+                </div>
+                <div class="article-card__content">
+                    <h3>Зимний Байкал: как не замёрзнуть?</h3>
+                    <p class="article-excerpt">Как подготовиться к путешествию на Байкал зимой.</p>
+                    <div class="article-footer">
+                        <a href="statya.html" class="btn btn--outline">Читать статью</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const filterTabs = document.querySelectorAll('.filter-tab');
+    const articleCards = document.querySelectorAll('.article-card');
+    
+    filterTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            filterTabs.forEach(t => t.classList.remove('active'));
+            this.classList.add('active');
+            
+            const filterValue = this.dataset.filter;
+            filterArticles(filterValue);
+        });
+    });
+    
+    function filterArticles(filter) {
+        articleCards.forEach(card => {
+            const cardType = card.dataset.type;
+            
+            if (filter === 'all' || cardType === filter) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+});
+</script>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col">
+                    <a href="1.html" class="logo"><span>RusTour</span></a>
+                    <p>Туры по России с 2025 года</p>
+                </div>
+                <div class="footer__col">
+                    <h4>Контакты</h4>
+                    <p><i class="fas fa-phone-alt"></i> +7 (800) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> info@RusTour.ru</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Новосибирск, ул. Романова, 38</p>
+                </div>
+                <div class="footer__col">
+                    <h4>Подписаться</h4>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Ваш email">
+                        <button type="submit" class="btn btn--primary">OK</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>© 2025 RusTour. Все права защищены.</p>
+                <div class="footer__links">
+                    <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%84%D0%B8%D0%B4%D0%B5%D0%BD%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C">Политика конфиденциальности</a>
+                    <a href="https://ru.wikipedia.org/wiki/%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F_%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

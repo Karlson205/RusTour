@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название статьи | RusTour</title>    
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="1.html" class="logo">Rus<span>Tour</span></a>
+                <nav class="nav">
+                    <a href="regions.html" class="nav__link">Маршруты</a>
+                    <button class="btn nav__btn">Подобрать тур</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main article-single">
+        <div class="container">
+            <nav class="breadcrumbs">
+                <a href="1.html">Главная</a>
+                <span> / </span>
+                <a href="regions.html">Маршруты</a>
+                <span> / </span>
+                <span>Статья пример</span>
+            </nav>
+        </div>
+
+        <!-- Шапка статьи -->
+        <article class="article">
+            <div class="container">
+
+                <header class="article-header">
+                <h1 class="article-title">Название статьи</h1>
+                </header>
+
+                <!-- Основное изображение -->
+                <div class="article-hero">
+                    <img style="height: 80%; width: 80%;" src="Gorila.jpg" alt="Обложка статьи" class="article-hero-image">
+                </div>
+
+                <!-- Содержимое статьи -->
+                <div class="article-content">
+                    <p class="article-lead">Краткое вступление на 2-3 предложения, которое заинтересует читателя и раскроет основную тему статьи.</p>
+                    
+                    <h2>Первый подзаголовок</h2>
+                    <p>Основной текст статьи. Здесь вы можете подробно раскрыть тему. Используйте абзацы для удобства чтения. Например:</p>
+                    
+                    <p>Россия предлагает уникальные возможности для путешественников. От древних городов Золотого кольца до величественных пейзажей Камчатки — каждый регион обладает своим неповторимым характером.</p>
+                    
+                    <div class="article-image">
+                        <img style="height: 40%; width: 40%;" src="gorila2.jpg" alt="Дополнительное фото">
+                        <p class="image-caption">Пример подписи к фотографии</p>
+                    </div>
+                    
+                    <h2>Второй подзаголовок</h2>
+                    <p>Структурируйте информацию с помощью:</p>
+                    <ul>
+                        <li>Маркированных списков</li>
+                        <li>Четкого разделения на параграфы</li>
+                        <li>Подзаголовков разных уровней</li>
+                    </ul>
+                    
+                    <blockquote class="article-quote">
+                        "Цитата или важная мысль, которую стоит выделить из общего текста."
+                        <footer>- Автор цитаты</footer>
+                    </blockquote>
+                    
+                    <h3>Подраздел (h3)</h3>
+                    <p>Дополнительная информация по теме с более детальным описанием.</p>
+                    
+                    <!-- Блок с полезной информацией -->
+                    <div class="article-info">
+                        <h4><i class="fas fa-info-circle"></i> Полезно знать</h4>
+                        <div class="info-box">
+                            <p>Основные рекомендации и важные факты, которые стоит выделить в отдельный блок.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Заключение -->
+                    <div class="article-conclusion">
+                        <h2>Выводы</h2>
+                        <p>Подведите итоги статьи, выделите ключевые моменты и дайте рекомендации читателям.</p>
+                    </div>
+                </div>
+
+                <!-- Теги и соц. кнопки -->
+                <footer class="article-footer">
+                    <div class="article-tags">
+                        <span>Теги:</span>
+                        <a href="#" class="tag">#путешествия</a>
+                        <a href="#" class="tag">#россия</a>
+                        <a href="#" class="tag">#советы</a>
+                    </div>
+                    <div class="social-share">
+                        <span>Поделиться:</span>
+                        <a href="https://vk.com/feed" class="social-btn"><i class="fab fa-vk"></i></a>
+                        <a href="https://web.telegram.org/a/" class="social-btn"><i class="fab fa-telegram"></i></a>
+                        <a href="https://www.whatsapp.com/?lang=ru_RU" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="article-meta">
+                                                <br><br><br>
+                        <br>
+                        <span class="article-date"><i class="far fa-calendar"></i> 31 Мая 2025</span><br>
+                        <span class="article-views"><i class="far fa-eye"></i> 1.5K</span>
+                    </div>
+                    <div class="article-author">
+                        <br>
+                        <img style="height: 20%; width: 20%;" src="polzovatel.png" alt="Автор" class="author-avatar">
+                        <div class="author-info">
+                            <span class="author-name">Тут будет имя автора</span>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </article>
+
+        <!-- Рекомендуемые статьи -->
+<section class="section related-articles">
+    <div class="container">
+        <h2 class="section-title">Читайте также</h2>
+        <div class="articles-grid">
+            <!-- Статья о Санкт-Петербурге -->
+            <article class="article-card">
+                <div class="article-card__image">
+                    <img src="piter.jpeg" alt="Санкт-Петербург">
+                    <span class="article-badge"><i class="fas fa-landmark"></i> Культура</span>
+                </div>
+                <div class="article-card__content">
+                    <h3>Санкт-Петербург за 3 дня: маршрут</h3>
+                    <p class="article-excerpt">Как увидеть главное в Северной столице за короткий срок</p>
+                    <a href="statya.html" class="btn btn--outline">Читать статью</a>
+                </div>
+            </article>
+
+            <!-- Статья о Казани -->
+            <article class="article-card">
+                <div class="article-card__image">
+                    <img src="kazan.jpeg" alt="Казань">
+                    <span class="article-badge"><i class="fas fa-utensils"></i> Гастротуризм</span>
+                </div>
+                <div class="article-card__content">
+                    <h3>Гастрономическая Казань</h3>
+                    <p class="article-excerpt">Что попробовать в столице Татарстана</p>
+                    <a href="statya.html" class="btn btn--outline">Читать статью</a>
+                </div>
+            </article>
+
+            <!-- Статья о Сочи -->
+            <article class="article-card">
+                <div class="article-card__image">
+                    <img src="sochi.jpeg" alt="Сочи">
+                    <span class="article-badge"><i class="fas fa-hiking"></i> Активный отдых</span>
+                </div>
+                <div class="article-card__content">
+                    <h3>Неизвестный Сочи: горные тропы</h3>
+                    <p class="article-excerpt">5 маршрутов вдали от туристических мест</p>
+                    <a href="statya.html" class="btn btn--outline">Читать статью</a>
+                </div>
+            </article>
+
+            <!-- Статья о Байкале -->
+            <article class="article-card">
+                <div class="article-card__image">
+                    <img src="BuyKall.jpg" alt="Байкал">
+                    <span class="article-badge"><i class="fas fa-water"></i> Природа</span>
+                </div>
+                <div class="article-card__content">
+                    <h3>Зимняя магия Байкала</h3>
+                    <p class="article-excerpt">Как увидеть знаменитый байкальский лёд</p>
+                    <a href="statya.html" class="btn btn--outline">Читать статью</a>
+                </div>
+                
+            </article>
+        </div>
+    </div>
+</section>
+
+    <!-- Подвал (как на главной) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col">
+                    <a href="1.html" class="logo"><span>RusTour</span></a>
+                    <p>Туры по России с 2025 года</p>
+                </div>
+                <div class="footer__col">
+                    <h4>Контакты</h4>
+                    <p><i class="fas fa-phone-alt"></i> +7 (800) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> info@RusTour.ru</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Новосибирск, ул. Романова, 38</p>
+                </div>
+                <div class="footer__col">
+                    <h4>Подписаться</h4>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Ваш email">
+                        <button type="submit" class="btn btn--primary">OK</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="https://vk.com/feed"><i class="fab fa-vk"></i></a>
+                        <a href="https://web.telegram.org/"><i class="fab fa-telegram"></i></a>
+                        <a href="https://www.youtube.com/results?search_query=never+gonna+give+you+up"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>© 2025 RusTour. Все права защищены.</p>
+                <div class="footer__links">
+                    <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%84%D0%B8%D0%B4%D0%B5%D0%BD%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C">Политика конфиденциальности</a>
+                    <a href="https://ru.wikipedia.org/wiki/%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F_%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F">Условия использования</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

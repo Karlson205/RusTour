@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тур в Санкт-Петербург | РусТур</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Дополнительные стили для страницы тура из-за моей лени */
+        .tour-hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/piter-banner.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .tour-container {
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 40px;
+            margin: 40px auto;
+        }
+        
+        .booking-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 30px;
+            height: fit-content;
+            position: sticky;
+            top: 20px;
+        }
+        
+        .price {
+            font-size: 28px;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin: 15px 0;
+        }
+        
+        .book-btn {
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+        }
+        
+        .tour-details {
+            background: #fff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .detail-item {
+            display: flex;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+        
+        .detail-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--light-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            color: var(--primary-color);
+            font-size: 20px;
+        }
+        
+        @media (max-width: 992px) {
+            .tour-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .booking-card {
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="1.html" class="logo">Rus<span>Tour</span></a>
+                <nav class="nav">
+                    <a href="regions.html" class="nav__link">Маршруты</a>
+                    <a href="tips.html" class="nav__link">Советы</a>
+                    <button class="btn nav__btn">Подобрать тур</button>
+                </nav>
+                <button class="menu-btn" id="menuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main class="main">
+        <!-- Баннер -->
+        <section class="tour-hero">
+            <div class="container">
+                <h1>Тур в Санкт-Петербург</h1>
+                <p class="hero-subtitle">Культурная столица России • 5 дней/4 ночи</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="tour-container">
+                <div class="tour-details">
+                    <nav class="breadcrumbs">
+                        <a href="1.html">Главная</a>
+                        <span> / </span>
+                        <span>Санкт-Петербург</span>
+                    </nav>
+                    
+                    <!-- Галерея -->
+                    <div class="tour-gallery">
+                        <img src="sankt.jpeg" alt="Санкт-Петербург" class="main-image">
+                        <div class="thumbnails">
+                            <img src="piter.jpeg" alt="">
+                            <img src="spb.jpg" alt="">
+                            <img src="piterb.jpg" alt="">
+                        </div>
+                    </div>
+                    
+                    <!-- Описание тура -->
+                    <h2>Описание тура</h2>
+                    <p>Этот 5-дневный тур познакомит вас с главными достопримечательностями Санкт-Петербурга. Вы посетите Эрмитаж, Петергоф, Исаакиевский собор и совершите прогулку по рекам и каналам северной столицы.</p>
+                    
+                    <!-- Детали тура -->
+                    <h2>Детали программы</h2>
+                    
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Даты тура</h3>
+                            <p>10.06.2025 - 15.06.2025</p>
+                            <p class="text-muted">Другие даты доступны по запросу</p>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                        <div>
+                            <h3>Проживание</h3>
+                            <p>Отель "Северная Корона" 4*</p>
+                            <p class="text-muted">2-местные номера с завтраком</p>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div>
+                            <h3>Питание</h3>
+                            <p>Завтраки + 3 ужина</p>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Маршрут</h3>
+                            <ul>
+                                <li>День 1: Прибытие, обзорная экскурсия</li>
+                                <li>День 2: Эрмитаж, Дворцовая площадь</li>
+                                <li>День 3: Петергоф, прогулка на катере</li>
+                                <li>День 4: Свободный день</li>
+                                <li>День 5: Отъезд</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Дополнительная информация -->
+                    <h2>Важная информация</h2>
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <div>
+                            <h3>Условия</h3>
+                            <ul>
+                                <li>Предоплата 30% при бронировании</li>
+                                <li>Возможность отмены за 14 дней</li>
+                                <li>Страховка включена в стоимость</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Блок бронирования -->
+                <div class="booking-card">
+                    <h2>Забронировать тур</h2>
+                    <div class="price">28 900 ₽</div>
+                    <p class="text-muted">за человека при 2-местном размещении</p>
+                    
+                    <form class="booking-form">
+                        <div class="form-group">
+                            <label>Дата тура</label>
+                            <select class="form-control">
+                                <option>10.06.2025 - 15.06.2025</option>
+                                <option>15.07.2025 - 20.07.2025</option>
+                                <option>05.08.2025 - 10.08.2025</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Количество человек</label>
+                            <select class="form-control">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5+</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Тип номера</label>
+                            <select class="form-control">
+                                <option>Стандарт (2 местный)</option>
+                                <option>Улучшенный (2 местный)</option>
+                                <option>Люкс (2 местный)</option>
+                                <option>Одноместный</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary book-btn">
+                            <i class="fas fa-shopping-cart"></i> Забронировать
+                        </button>
+                        
+                        <div class="booking-info">
+                            <p><i class="fas fa-phone"></i> Есть вопросы? Звоните +7 (800) 123-45-67</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Дополнительные туры -->
+        <section class="section related-tours">
+            <div class="container">
+                <h2 class="section-title">Похожие туры</h2>
+                <div class="tours-grid">
+                    <div class="tour-card">
+                        <img src="images/kazan-tour.jpg" alt="Казань">
+                        <div class="tour-card__content">
+                            <h3>Казань - Йошкар-Ола</h3>
+                            <div class="tour-meta">
+                                <span><i class="fas fa-clock"></i> 4 дня</span>
+                                <span><i class="fas fa-hotel"></i> 4* отель</span>
+                            </div>
+                            <div class="tour-price">от 19 900 ₽</div>
+                            <a href="tour-kazan.html" class="btn btn--outline">Подробнее</a>
+                        </div>
+                    </div>
+                    
+                    <div class="tour-card">
+                        <img src="images/sochi-tour.jpg" alt="Сочи">
+                        <div class="tour-card__content">
+                            <h3>Сочи - Красная Поляна</h3>
+                            <div class="tour-meta">
+                                <span><i class="fas fa-clock"></i> 6 дней</span>
+                                <span><i class="fas fa-hotel"></i> 3* отель</span>
+                            </div>
+                            <div class="tour-price">от 22 500 ₽</div>
+                            <a href="tour-sochi.html" class="btn btn--outline">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <!-- Как на других страницах -->
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
